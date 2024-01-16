@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden; /* Hide overflow to clip the overlay during animation */
+            margin-left: 3rem;
+            margin-top: 3rem;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 100%;
+            left: 0; /* Change from 0 to 100% to make the overlay start from the right */
+            width: 80%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: top 0.3s ease-in-out; /* Change from top to left for right-to-left animation */
+        }
+
+        .image-container:hover .overlay {
+            top: 0; 
+        }
+
+        .overlay h2 {
+            margin: 0;
+        }
+        .uu{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @media screen and (max-width:880px){
+            .uu{
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+        }
+        }
+        @media screen and (max-width:440px){
+            .uu{
+            display: grid;
+            grid-template-columns:  1fr;
+        }
+        .overlay {
+            width: 75%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+<div class="uu">
+    <div class="image-container hh">
+        <img src="https://img.freepik.com/free-vector/peacock-feather-shree-krishna-janmashtami-festival-card-background_1035-24190.jpg?size=626&ext=jpg&uid=R132854053&ga=GA1.1.179910324.1702895940&semt=ais" alt="Your Image" style="height: 250px;"   class="img-fluid">
+        <div class="overlay">
+            <div class="cen"><h2>Your Overlay Content</h2>
+                <p>Additional information or buttons can go here.</p></div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="image-container">
+        <img src="https://img.freepik.com/free-vector/peacock-feather-shree-krishna-janmashtami-festival-card-background_1035-24190.jpg?size=626&ext=jpg&uid=R132854053&ga=GA1.1.179910324.1702895940&semt=ais" alt="Your Image" style="height: 250px;"  class="img-fluid">
+        <div class="overlay">
+            <div class="cen"><h2>Your Overlay Content</h2>
+                <p>Additional information or buttons can go here.</p></div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="image-container">
+        <img src="https://img.freepik.com/free-vector/peacock-feather-shree-krishna-janmashtami-festival-card-background_1035-24190.jpg?size=626&ext=jpg&uid=R132854053&ga=GA1.1.179910324.1702895940&semt=ais" alt="Your Image" style="height: 250px;"   class="img-fluid">
+        <div class="overlay">
+            <div class="cen"><h2>Your Overlay Content</h2>
+                <p>Additional information or buttons can go here.</p></div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="image-container">
+        <img src="https://img.freepik.com/free-vector/peacock-feather-shree-krishna-janmashtami-festival-card-background_1035-24190.jpg?size=626&ext=jpg&uid=R132854053&ga=GA1.1.179910324.1702895940&semt=ais" alt="Your Image" style="height: 250px;"   class="img-fluid">
+        <div class="overlay">
+            <div class="cen"><h2>Your Overlay Content</h2>
+                <p>Additional information or buttons can go here.</p></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
